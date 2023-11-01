@@ -10,14 +10,17 @@
       <img src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?&style=for-the-badge&logo=javascript&logoColor=black"
       alt="Javascript">
     </a>
+    &nbsp;
     <a href="https://www.python.org/">
       <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
       alt="React Native">
     </a>
+    &nbsp;
     <a href="https://www.python.org/">
       <img src="https://img.shields.io/badge/redux-%23764ABC.svg?&style=for-the-badge&logo=redux&logoColor=white"
       alt="Redux">
     </a>
+    &nbsp;
     <a href="https://www.python.org/">
       <img src="https://img.shields.io/badge/Expo-1B1F23?style=for-the-badge&logo=expo&logoColor=white"
       alt="Expo">
