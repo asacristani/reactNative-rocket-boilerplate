@@ -1,10 +1,13 @@
 import {Button, Text, View} from "react-native";
 import React from "react";
+import { useDispatch, useSelector } from 'react-redux';
+import { logout } from '../../store/slices/userSlice';
 
-export default function MeScreen({ navigation, updateUser }) {
+export default function MeScreen({ navigation }) {
+  const dispatch = useDispatch();
 
-  const logout = () => {
-    updateUser(null);
+  const handleLogout = () => {
+    dispatch(logout());
   };
 
   return (
@@ -12,7 +15,7 @@ export default function MeScreen({ navigation, updateUser }) {
       <Text>Me</Text>
       <Button
         title="Logout"
-        onPress={logout}
+        onPress={handleLogout}
       />
     </View>
   );

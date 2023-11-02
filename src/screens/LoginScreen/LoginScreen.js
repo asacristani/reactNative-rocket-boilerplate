@@ -1,10 +1,13 @@
 import {Button, Text, View} from "react-native";
 import React from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {login} from "../../store/slices/userSlice";
 
-export default function LoginScreen({ navigation, updateUser }) {
+export default function LoginScreen({ navigation }) {
+  const dispatch = useDispatch();
 
   const fakeLogin = () => {
-    updateUser(true);
+    dispatch(login({user: 'something'}));
   };
 
   return (

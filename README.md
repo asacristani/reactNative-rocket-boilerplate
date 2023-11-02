@@ -66,8 +66,7 @@ npm expo start
 ## 🧪 Test
 WIP
 
-# 🛠 Extend
-## Project Structure
+## 📁 Project Structure
 
 This project follows a typical directory structure for a React Native app using Expo. Below is an overview of the project structure:
 
@@ -77,6 +76,7 @@ This project follows a typical directory structure for a React Native app using 
   - `components/`: Custom React components used in the app.
   - `navigation/`: Navigation-related components.
   - `screens/`: Application screens.
+  - `store/`: Redux and Secure Storage.
 - `assets/`: This directory contains various assets used in the app, such as icons and splash screens.
 ### Others
 - `app.json`: The configuration file for Expo.
