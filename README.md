@@ -77,6 +77,7 @@ This project follows a typical directory structure for a React Native app using 
   - `navigation/`: Navigation-related components.
   - `screens/`: Application screens.
   - `store/`: Redux and Secure Storage.
+  - `style/`: Constant used in style like colors and fonts.
 - `assets/`: This directory contains various assets used in the app, such as icons and splash screens.
 ### Others
 - `app.json`: The configuration file for Expo.
