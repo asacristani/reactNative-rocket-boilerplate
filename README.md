@@ -39,7 +39,8 @@ security, auth and test.
 - **Navigation**: Auth stack and Home tab implemented by React Navigator.
 - **Storage**: General storage with Redux, Redux-Persist and Secure Storage for sensitive data. 
 - **Authentication**: Log-in and sign-up forms.
-- **Folder structure**: Clean and organized workspace for extending and testing easier.
+- **Smart Design**: All style abstracted and grouped to adapt and change all the style immediately.
+- **Folder Structure**: Clean and organized workspace for extending and testing easier.
 - **Rock-Solid Reliability**: Linters, Type checking, CI and unit/integration/component/e2e tests.
 - **Deployment**: WIP
 

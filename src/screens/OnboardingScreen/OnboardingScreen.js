@@ -18,15 +18,21 @@ export default function OnboardingScreen({ navigation }) {
   };
 
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', padding: 20 }}>
+    <View style={{ flex: 1, alignItems: 'center', padding: 20 }}>
+      <View style={{ flex: 1, alignItems: 'center', padding: 20 }}>
       <Image
         source={require('../../../assets/icon.png')}
-        style={{ width: "50%", height: 200, marginBottom: 20 }}
+        style={{ height: 200, marginBottom: 20 }}
+        resizeMode="contain"
       />
-      <Text style={{ fontSize: 24, fontWeight: 'bold', marginTop: 20 }}>Welcome to ReactNative-Rocket-Boilerplate</Text>
+      <Text style={{ fontSize: 24, fontWeight: 'bold', marginTop: 20 }}>
+          Welcome to{"\n"}
+          ReactNative-Rocket-Boilerplate
+      </Text>
       <Text style={{ fontSize: 16, textAlign: 'center', marginVertical: 20 }}>
         This is the onboarding of your mobile app
       </Text>
+      </View>
       <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '100%' }}>
         <Button
             mode="text"
@@ -46,13 +52,3 @@ export default function OnboardingScreen({ navigation }) {
     </View>
   );
 };
-//   return (
-//     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-//       <Text>Onboarding</Text>
-//       <Button
-//         title="Go to Login"
-//         onPress={() => navigation.navigate('Login')}
-//       />
-//     </View>
-//   );
-// }
