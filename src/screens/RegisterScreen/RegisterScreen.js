@@ -1,10 +1,9 @@
-import { Image, Text, View, Alert } from "react-native";
-import React, { useState } from 'react';
-import { Button, TextInput } from 'react-native-paper';
-import PhoneInput from 'react-native-phone-input'
-import theme from "../../style/theme";
+import {Image, View, Alert} from 'react-native';
+import React, {useState} from 'react';
+import {Button, TextInput} from 'react-native-paper';
+import theme from '../../style/theme';
 
-export default function SignUpScreen({ navigation }) {
+export default function SignUpScreen() {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [password, setPassword] = useState('');
@@ -26,7 +25,8 @@ export default function SignUpScreen({ navigation }) {
 
     // Phone number validation
     if (!/^[0-9]{10}$/.test(phone)) {
-      Alert.alert('Error', 'Please enter a valid phone number (10 numeric digits).');
+      Alert.alert('Error', 'Please enter a valid phone number' +
+          ' (10 numeric digits).');
       return;
     }
 
@@ -34,8 +34,10 @@ export default function SignUpScreen({ navigation }) {
     const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}$/;
     if (!passwordRegex.test(password)) {
       Alert.alert(
-        'Error',
-        'Password must contain at least 8 characters, including at least one uppercase letter, one lowercase letter, one number, and one special character.'
+          'Error',
+          'Password must contain at least 8 characters,' +
+          ' including at least one uppercase letter, one lowercase letter,' +
+          ' one number, and one special character.',
       );
       return;
     }
@@ -46,7 +48,8 @@ export default function SignUpScreen({ navigation }) {
       return;
     }
 
-    // If all validations pass, you can send the form data to your backend or perform other actions.
+    // If all validations pass, you can send the form data
+    // to your backend or perform other actions.
     // Here, you could make a registration request.
     // Example: registerUser(email, phone, password);
 
@@ -96,13 +99,13 @@ export default function SignUpScreen({ navigation }) {
         style={styles.input}
       />
 
-        <Button
-          mode="contained"
-          onPress={handleSignUp}
-          style={[styles.button, { backgroundColor: theme.colors.primary }]}
-        >
+      <Button
+        mode="contained"
+        onPress={handleSignUp}
+        style={[styles.button, {backgroundColor: theme.colors.primary}]}
+      >
           Sign Up
-        </Button>
+      </Button>
 
     </View>
   );

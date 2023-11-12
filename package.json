@@ -33,6 +33,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "eslint": "^8.53.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.33.2",
     "husky": "^8.0.3",
     "lint-staged": "^15.1.0"
   },

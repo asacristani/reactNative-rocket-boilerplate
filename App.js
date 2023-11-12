@@ -1,24 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import { NavigationContainer } from '@react-navigation/native';
+import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
 
-import { Provider, useSelector } from 'react-redux';
-import { PersistGate } from 'redux-persist/integration/react';
-import { store, persistor } from './src/store';
+import {Provider, useSelector} from 'react-redux';
+import {PersistGate} from 'redux-persist/integration/react';
+import {store, persistor} from './src/store';
 
-import { AuthStackScreen, HomeTabScreen } from './src/navigation'
-import { SplashScreen } from './src/screens'
+import {AuthStackScreen, HomeTabScreen} from './src/navigation';
 
 function App() {
-
-  const [loading, setLoading] = useState(false)
   const user = useSelector((state) => state.user);
-
-
-  // if (loading) {
-  //   return (
-  //     <SplashScreen/>
-  //   )
-  // }
 
   return (
     <NavigationContainer>
@@ -38,5 +28,5 @@ export default function AppWrapper() {
         <App/>
       </PersistGate>
     </Provider>
-  )
+  );
 }

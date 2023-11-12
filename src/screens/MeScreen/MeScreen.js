@@ -1,12 +1,12 @@
-import {Text, View} from "react-native";
-import React from "react";
-import { useDispatch, useSelector } from 'react-redux';
-import { Button } from 'react-native-paper';
+import {View} from 'react-native';
+import React from 'react';
+import {useDispatch} from 'react-redux';
+import {Button} from 'react-native-paper';
 
-import { logout } from '../../store/slices/userSlice';
-import theme from "../../style/theme";
+import {logout} from '../../store/slices/userSlice';
+import theme from '../../style/theme';
 
-export default function MeScreen({ navigation }) {
+export default function MeScreen() {
   const dispatch = useDispatch();
 
   const handleLogout = () => {
@@ -14,7 +14,7 @@ export default function MeScreen({ navigation }) {
   };
 
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
       <Button
         title="Logout"
         onPress={handleLogout}

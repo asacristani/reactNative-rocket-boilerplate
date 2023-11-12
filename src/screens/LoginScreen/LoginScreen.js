@@ -1,19 +1,19 @@
-import { Text, View, Image } from "react-native";
-import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import {View, Image} from 'react-native';
+import React from 'react';
+import {useDispatch} from 'react-redux';
 
-import { TextInput, Button } from 'react-native-paper';
-import Icon from 'react-native-vector-icons/FontAwesome'; // Para el icono de Google
-import AppleIcon from 'react-native-vector-icons/MaterialCommunityIcons'; // Para el icono de Apple
+import {TextInput, Button} from 'react-native-paper';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import AppleIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import { login } from "../../store/slices/userSlice";
-import theme from "../../style/theme";
+import {login} from '../../store/slices/userSlice';
+import theme from '../../style/theme';
 
-const LoginScreen = ({ navigation }) => {
+const LoginScreen = ({navigation}) => {
   const dispatch = useDispatch();
 
   const fakeLogin = () => {
-    dispatch(login({ user: 'something' }));
+    dispatch(login({user: 'something'}));
   };
 
   const handleLoginPress = () => {
@@ -108,12 +108,12 @@ const styles = {
   buttonGoogle: {
     width: '100%',
     marginTop: 10,
-    backgroundColor: "#DB4437",
+    backgroundColor: '#DB4437',
   },
   buttonApple: {
     width: '100%',
     marginTop: 10,
-    backgroundColor: "black",
+    backgroundColor: 'black',
   },
   buttonSecondary: {
     width: '100%',
