@@ -8,7 +8,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "eslint .",
-    "husky:precommit": "lint-staged && npm run lint"
+    "husky:precommit": "lint-staged && npm run lint",
+    "husky": "husky install"
   },
   "dependencies": {
     "@expo/webpack-config": "^19.0.0",
