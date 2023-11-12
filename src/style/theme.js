@@ -9,7 +9,6 @@ const theme = {
     regular: 'Arial',
     bold: 'Arial-Bold',
   },
-  // Otros estilos comunes
 };
 
 export default theme;
