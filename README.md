@@ -1,6 +1,14 @@
 <p align="center">
   <img style="width: 50%" src="https://lh3.googleusercontent.com/d/1xZN6eAKeqzUEHGvgli-CGOd80-KovM-6?authuser=0">
 </p>
+<p align="center">
+  <a href="https://github.com/asacristani/eactNative-rocket-boilerplate/actions/workflows/ci.yml" target="_blank">
+      <img src="https://github.com/asacristani/reactNative-rocket-boilerplate/actions/workflows/ci.yml/badge.svg" alt="Test">
+  </a>
+  <a href="https://www.python.org/downloads/release/python-3110/" target="_blank">
+      <img src="https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript" alt="JavaScript ES6">
+  </a>
+</p>
 
 ⚛️📲 React Native Rocket Boilerplate to build an mobile APP based in Javascript with its most modern technologies!
 
