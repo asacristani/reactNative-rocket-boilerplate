@@ -68,11 +68,13 @@ export default function SignUpScreen({ navigation }) {
       <TextInput
         label="Email"
         value={email}
+        mode="outlined"
         onChangeText={setEmail}
         style={styles.input}
       />
       <TextInput
         label="Phone"
+        mode="outlined"
         value={phone}
         onChangeText={setPhone}
         style={styles.input}
@@ -80,6 +82,7 @@ export default function SignUpScreen({ navigation }) {
       <TextInput
         label="Password"
         secureTextEntry
+        mode="outlined"
         value={password}
         onChangeText={setPassword}
         style={styles.input}
@@ -87,19 +90,12 @@ export default function SignUpScreen({ navigation }) {
       <TextInput
         label="Repeat Password"
         secureTextEntry
+        mode="outlined"
         value={repeatPassword}
         onChangeText={setRepeatPassword}
         style={styles.input}
       />
-      <View style={styles.buttonContainer}>
-        <Button
-          mode="text"
-          onPress={() => navigation.navigate('Login')}
-          textColor={theme.colors.primary}
-          style={styles.button}
-        >
-          Back to login
-        </Button>
+
         <Button
           mode="contained"
           onPress={handleSignUp}
@@ -107,7 +103,7 @@ export default function SignUpScreen({ navigation }) {
         >
           Sign Up
         </Button>
-      </View>
+
     </View>
   );
 };
@@ -116,7 +112,8 @@ const styles = {
   container: {
     flex: 1,
     alignItems: 'center',
-    padding: 20,
+    paddingVertical: 20,
+    paddingHorizontal: 40,
   },
   image: {
     height: 200,
@@ -132,12 +129,10 @@ const styles = {
     marginBottom: 10,
   },
   buttonContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    width: '100%',
+
   },
   button: {
-    flex: 1,
+    width: '100%',
     marginLeft: 10,
   },
 };
