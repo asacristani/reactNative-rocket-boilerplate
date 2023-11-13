@@ -9,8 +9,9 @@
       <img src="https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript" alt="JavaScript ES6">
   </a>
 </p>
-
-⚛️📲 React Native Rocket Boilerplate to build an mobile APP based in Javascript with its most modern technologies!
+<p align="center">
+  ⚛️📲 React Native Rocket Boilerplate to build a mobile APP based in Javascript with its most modern technologies!
+</p>
 
 ---
 <p align="center">
@@ -31,10 +32,6 @@
       alt="Expo">
     </a>
 </p>
-<p align="center">
-        Also React-Navigator, Axios?? Jest? (test)
-</p>
-
 
 ---
 
@@ -61,9 +58,13 @@ security, auth and test.
 # 🎛️ Use
 ## 🔧  Installation
 1. Clone the repo
-2. Install the NPM dependencies
+2. Install the NPM dependencies:
 ```shell
 npm install
+```
+3. Try pre-commit:
+```shell
+npm run husky:precommit
 ```
 
 ## 🔌 Run
